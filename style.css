@@ -1,0 +1,26 @@
+body { background: #fffcf2; font-family: 'Poppins', sans-serif; display: flex; justify-content: center; padding: 20px; }
+
+.recipe-app { width: 100%; max-width: 900px; text-align: center; }
+
+.search-box { display: flex; gap: 10px; margin-bottom: 30px; }
+input { flex: 1; padding: 12px; border: 2px solid #eb5e28; border-radius: 8px; outline: none; }
+button { background: #eb5e28; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; }
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover { transform: translateY(-5px); }
+.recipe-card img { width: 100%; height: 200px; object-fit: cover; }
+.recipe-card h3 { padding: 15px 10px 5px; margin: 0; }
+.recipe-card p { color: #666; font-size: 0.9rem; padding: 0 10px 15px; }
